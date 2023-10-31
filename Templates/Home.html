@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+        <title>Women diabetes prediction</title>  
+    </head>
+    <body>
+        <div class="background">
+        <fieldset style="background-color: rgba(50, 48, 48, 0.781);border-radius: 50px;width: 75%;height: 70%;opacity: 100%;margin-top: 5%;margin-left: 12.5%;"> 
+            <legend style="text-align:center;font-size: 30px;font-family:Arial;"><B><h3 style="color: rgb(125, 211, 211);text-shadow: 2px 2px #4e6060"><u>Women diabetes prediction</u></h3></Car></B></legend>
+            <form method="POST" action="/predict">
+                <table style="width: 75%; margin-left: 13%;align-content:center;">
+                    <tr>
+                        <td><label for="Pregnancies">Pregnancies</label></td>
+                        <td><input type="number" step="0.001" id="Pregnancies" name="Pregnancies"></td>
+                        <td><label>(Number of times pregnant)</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Glucose">Glucose</label></td>
+                        <td><input type="number" step="0.001" id="Glucose" name="Glucose"></td>
+                        <td><label>(Plasma glucose concentration a 2 hours in an oral glucose tolerance test)</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BloodPressure">Blood Pressure</label></td>
+                        <td><input type="number" step="0.001" id="BloodPressure" name="BloodPressure"></td>
+                        <td><label>(Diastolic blood pressure (mm Hg))</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="SkinThickness">Skin Thickness</label></td>
+                        <td><input type="number" step="0.001" id="SkinThickness" name="SkinThickness"></td>
+                        <td><label>(Triceps skin fold thickness (mm))</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Insulin">Insulin</label></td>
+                        <td><input type="number" step="0.001" id="Insulin" name="Insulin"></td>
+                        <td><label>(2-Hour serum insulin (mu U/ml))</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BMI">BMI</label></td>
+                        <td><input type="number" step="0.001" id="BMI" name="BMI"></td>
+                        <td><label>(Body mass index (weight in kg/(height in m)^2))</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label></td>
+                        <td><input type="number" step="0.001" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction"></td>
+                        <td><label>(Diabetes pedigree function)</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Age">Age</label></td>
+                        <td><input type="number" id="Age" name="Age"></td>
+                        <td><label>(Age (years))</label></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <button type="submit" style="background-color: rgba(125, 211, 211, 0.799); width: 10%; margin-left: 45%; margin-right: 45%; color: azure;">
+                    <p>Predict diabetes</p>
+                </button>
+            </form>
+            <p style="text-align: center; color: azure;">{{ predict }}</p>
+            
+        </fieldset>  
+        </div>
+    </body>
+
+</html>
