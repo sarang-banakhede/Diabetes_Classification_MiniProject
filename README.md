@@ -1,4 +1,4 @@
------------------------------------------------------------- MINI PROJECT ----------------------------------------------------------------------------------------- 
+------------------------------------------------------------ MINI PROJECT ---------------------------------------------------------------
 # Diabetes Prediction Model
 
 This repository contains a classification model that predicts whether a female patient has diabetes based on diagnostic measurements.
