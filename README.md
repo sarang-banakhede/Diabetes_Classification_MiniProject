@@ -1,5 +1,6 @@
 ------------------------------------------------ MINI PROJECT ---------------------------------------------
 # Diabetes Prediction Model
+(see demo :- https://www.linkedin.com/posts/sarang-banakhede-79327823a_healthtech-machinelearning-datascience-activity-7096183714467971072-dkLE?utm_source=share&utm_medium=member_desktop)
 
 This repository contains a classification model that predicts whether a female patient has diabetes based on diagnostic measurements.
 The dataset used for training and evaluating the model is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. 
